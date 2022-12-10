@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* common styling  */
+
+header {
+    background-color: #a9e087;
+}
+
+main {
+    color: #ffffff;
+    text-align: center;
+}
+
+.btn {
+    position: absolute;
+    right: 42%;
+    top: 75%;
+    width: 16%;
+    padding: 1% 2%;
+    background-color: #000000;
+    text-decoration: none;
+    color: #fffefe;
+    font-size: 129%;
+    font-weight: 600;
+    border: 2px solid #cecece;
+    cursor: pointer;
+}
+
+.heading {
+    padding-top: 12%;
+    font-size: 320%;
+}
+
+.logo,
+.logo-desc {
+    display: inline-block;
+    font-size: 119%;
+    font-weight: 800;
+    padding: 1.5%;
+}
+
+.logo-desc {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+
+/* frame styles */
+
+.frame {
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    height: 93vh;
+}
+
+.frame-1 {
+    display: block;
+}
+
+
+/* frame-1 styles */
+
+.frame-1 .btn {
+    display: none;
+}
+
+
+/* tickmark styles */
+
+
+/* radio button styles */
+
+.radio-btn {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* circle styles */
+
+.circle-radio-button {
+    margin-right: 3%;
+    width: 200px;
+    height: 200px;
+    background-color: #00987c;
+    border-radius: 50%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-radio-button input {
+    display: none;
+}
+
+.circle-radio-button .tick-mark::before {
+    position: absolute;
+    left: -2px;
+    top: 13%;
+    height: 112%;
+    border-radius: 25px;
+    width: 3px;
+    background-color: #fefefe;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.circle-radio-button .tick-mark::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    border-radius: 25px;
+    height: 3px;
+    width: 201%;
+    background-color: #fefefe;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+
+/* circle styles end  */
+
+
+/* square styles starts */
+
+.square-radio-button {
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-radio-button input {
+    display: none;
+}
+
+.square-radio-button .tick-mark::before {
+    position: absolute;
+    left: -2px;
+    top: 13%;
+    height: 112%;
+    border-radius: 25px;
+    width: 3px;
+    background-color: #fefefe;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.square-radio-button .tick-mark::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    border-radius: 25px;
+    height: 3px;
+    width: 201%;
+    background-color: #fefefe;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+
+/* square styles ends */
+
+
+/* triangle styles */
+
+.triangle-radio-button {
+    margin-right: 3%;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #ffabdc;
+    display: inline-flex;
+    margin-left: 20px;
+    margin-bottom: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle-radio-button input {
+    display: none;
+}
+
+.triangle-radio-button .tick-mark::before {
+    position: absolute;
+    right: 30px;
+    top: 411%;
+    height: 96%;
+    border-radius: 25px;
+    width: 3px;
+    background-color: #fefefe;
+    content: "";
+    transform: translateX(20px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.triangle-radio-button .tick-mark::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 31px;
+    top: 299%;
+    height: 61px;
+    width: 3px;
+    background-color: #fefefe;
+    content: "";
+    transform: translateX(20px) rotate(45deg);
+    border-radius: 25px;
+    transform-origin: left bottom;
+}
+
+
+/* triangle styles ends */
+
+.tick-mark {
+    display: none;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* c-framestyling */
+
+.radius {
+    margin-top: 40px;
+    height: 10%;
+    width: 40%;
+    text-align: center;
+    font-size: 300%;
+    color: #fffefe;
+    border: 3px solid #fffefe;
+    background-color: #000000;
+}
+
+
+/* final circle */
+
+.frame.final .heading-shape {
+    font-size: 55px;
+    position: absolute;
+    top: 47%;
+    right: 46%;
+}
+
+.frame.final table {
+    position: absolute;
+    top: 55%;
+    right: 40%;
+}
+
+.frame.final td {
+    text-align: start;
+    padding-left: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+}
+
+.frame.final td:first-child {
+    width: 200px;
+}
+
+.frame.final td:nth-child(2n+1) {
+    background-color: #3188ff;
+}
+
+.frame.final td:nth-child(2n) {
+    background-color: #455d7e;
+}
+
+label.circle-radio-button.result {
+    position: absolute;
+    right: 42%;
+    top: 20%;
+}
+
+label.triangle-radio-button.result {
+    position: absolute;
+    right: 42%;
+    top: 20%;
+}
+
+label.square-radio-button.result {
+    position: absolute;
+    right: 45%;
+    top: 20%;
+}
+
+.hide-element {
+    display: none;
+}
+
+.shape {
+    cursor: pointer;
+}

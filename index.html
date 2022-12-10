@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<!-- header starts -->
+
+<head>
+    <title>Math Kids</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- css styles -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- scripts -->
+    <script src='./js/index.js'></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">MATH KIDS</h1>
+        <h1 class="logo-desc">KIDS LEARNING APP</h1>
+    </header>
+    <main>
+        <!-- main frame for the webpage -->
+        <div class="frame " id="mainFrame">
+            <p class="heading">1. Choose a Shape</p>
+            <form>
+                <div class="radio-btn">
+                    <label class="shape circle-radio-button ">
+                        <input type="radio" name="tab" onclick="showCheckMark('tickCircle')" />
+                        <div class="tick-mark hide-element" id="tickCircle" ></div>
+
+                    </label>
+
+                    <label class="shape triangle-radio-button">
+                        <input type="radio" name="tab" onclick="showCheckMark('tickTriangle')" />
+                        <div class="tick-mark hide-element" id="tickTriangle" ></div>
+                    </label>
+                    <label class="shape square-radio-button">
+                        <input type="radio" name="tab" onclick="showCheckMark('tickSquare')" />
+                        <div class="tick-mark hide-element" id="tickSquare" ></div>
+                    </label>
+                </div>
+                <a class="btn hide-element" id="nextBtn" onclick="displayNext()">NEXT</a>
+            </form>
+        </div>
+        <!-- the first page for the circle -->
+        <div class="frame hide-element" id="circleMeasurement">
+            <form>
+                <p class=" heading">2.Enter Radius</p>
+                <input type="number" class="radius" id="circleRadiusValue" />
+                <a class="btn" id="calculate" onclick="calculationOfShapes('circle')">CALCULATE</a>
+            </form>
+        </div>
+        <!-- the last page for the circle -->
+        <div class="frame final hide-element" id="circleResult">
+            <label class="circle-radio-button result"></label>
+            <p class=" heading-shape">Circle</p>
+            <table>
+                <tr>
+                    <td>RADIUS</td>
+                    <td>r</td>
+                    <td id="circleRadius"></td>
+                </tr>
+                <tr>
+                    <td>AREA</td>
+                    <td>πr<sup>2</sup></td>
+                    <td id="circleArea"></td>
+                </tr>
+                <tr>
+                    <td>PERIMETER</td>
+                    <td>2πr</td>
+                    <td id="circlePerimeter"></td>
+                </tr>
+            </table>
+            <a class="btn" id="startAgain" href="index.html">START AGAIN</a>
+        </div>
+        <!-- the first page for the square -->
+        <div class="frame hide-element" id="squareMeasurement">
+            <form>
+                <p class=" heading">2.Enter Side</p>
+                <input type="number" class="radius" id="squareRadiusValue" />
+                <a class="btn" id="calculate" onclick="calculationOfShapes('square')">CALCULATE</a>
+            </form>
+        </div>
+
+        <!-- the last page for the square -->
+        <div class="frame final hide-element" id="squareResult">
+            <label class="square-radio-button result"></label>
+            <p class=" heading-shape">Square</p>
+            <table>
+                <tr>
+                    <td>SIDE</td>
+                    <td>s</td>
+                    <td id="squareRadius"></td>
+                </tr>
+                <tr>
+                    <td>AREA</td>
+                    <td>s*s<sup>2</sup></td>
+                    <td id="squareArea"></td>
+                </tr>
+                <tr>
+                    <td>PERIMETER</td>
+                    <td>4*s</td>
+                    <td id="squarePerimeter"></td>
+                </tr>
+            </table>
+            <a class="btn" id="startAgain" href="index.html">START AGAIN</a>
+        </div>
+        <!-- the first page for the triangle -->
+        <div class="frame hide-element" id="triangleMeasurement">
+            <p class=" heading">2.Enter Side(Base & Height)</p>
+            <input type="number" class="radius" id="triangleRadiusValue" />
+            <a class="btn" id="calculate" onclick="calculationOfShapes('triangle')">CALCULATE</a>
+        </div>
+        <!-- the last page for the circle -->
+        <div class="frame final hide-element" id="triangleResult">
+            <label class="triangle-radio-button result"></label>
+            <p class=" heading-shape">Triangle</p>
+            <table>
+                <tr>
+                    <td>SIDE</td>
+                    <td>s</td>
+                    <td id="triangleRadius"></td>
+                </tr>
+                <tr>
+                    <td>AREA</td>
+                    <td>0.433*s*s<sup>2</sup></td>
+                    <td id="triangleArea"></td>
+                </tr>
+                <tr>
+                    <td>PERIMETER</td>
+                    <td>3*s</td>
+                    <td id="trianglePerimeter"></td>
+                </tr>
+            </table>
+            <a class="btn" id="startAgain" href="index.html">START AGAIN</a>
+        </div>
+    </main>
+</body>
+
+</html>
